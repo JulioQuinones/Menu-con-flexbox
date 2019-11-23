@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu{
+    display: flex;
+    background-color: rgb(44,79,107);
+    &__item{
+        flex: auto;
+        text-align: center;
+        line-height: 3;
+        border-right: 2px solid rgb(38,70,97);
+        box-shadow: 0 0 0 rgb(31,57,78) inset;
+        transition: all .4s;
+        &:hover{
+            box-shadow: 0 -90px 0 rgb(31,57,78) inset;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+.img{
+    background-image: url("men.jpg");
+    background-position:center;
+    background-size: cover;
+    height: 100vh;
+    display: block;
+}
